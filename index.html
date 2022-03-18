@@ -7,20 +7,21 @@
 			document.getElementById("result").value+=val
 		}
 
-		function solve()
+		function penyelesaian()
 		{
 			let x = document.getElementById("result").value
 			let y = eval(x)
 			document.getElementById("result").value = y
 		}
 		
-		function clr()
+		function clear()
 		{
 			document.getElementById("result").value = ""
 		}
 	</script>
 	<!-- for styling -->
 	<style>
+
 		.title{
 		margin-bottom: 10px;
 		text-align:center;
@@ -48,12 +49,15 @@
 <!-- create table -->
 <body>
 	<center>
-	<div class = title >Simple Calculator</div>
+	<div style="background:white;padding:20px
+	;color:black;text-align:center;">
+
+	<div class = title >Tia's Calculator</div>
 	<table border="2">
 		<tr>
 			<td colspan="3"><input type="text" id="result" readonly /></td>
 			<!-- clr() function will call clr to clear all value -->
-			<td><input type="button" value="c" onclick="clr()"/> </td>
+			<td><input type="button" value="c" onclick="clear()"/> </td>
 		</tr>
 		<tr>
 			<!-- create button and assign value to each button -->
@@ -79,7 +83,7 @@
 			<td><input type="button" value="." onclick="dis('.')"/> </td>
 			<td><input type="button" value="0" onclick="dis('0')"/> </td>
 			<!-- solve function call function solve to evaluate value -->
-			<td><input type="button" value="=" onclick="solve()"/> </td>
+			<td><input type="button" value="=" onclick="penyelesaian()"/> </td>
 			<td><input type="button" value="*" onclick="dis('*')"/> </td>
 		</tr>
 	</table>
