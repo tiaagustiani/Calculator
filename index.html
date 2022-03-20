@@ -4,12 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title> My Calculators </title>
-    
+    <title> My Calculator </title>
+
 <style>
 	.title{
 		
-		margin-top:30px;
+		margin-top:20px;
 		margin-bottom: 10px;
 		text-align:center;
 		text-decoration:underline;
@@ -19,18 +19,32 @@
 		height:50px;
 		color:white;
 		
+		background-color:none ;
+		border-radius: 20px;
+
+}
+	.mode{
+		
+		margin-left:45px;
+		margin-top:8px;
+		text-align:left;
+		font-size:15px;
+		font-family: poppins;
+		color:white;
+		
 		}
 </style>
 
 </head>
 <body>
 	<center>
-			<div class = title> <h2>My Calculator</h2></div>
+			<div class = title> <h2> My Calculator </h2></div>
 	</center>
 
 
 	<div class="container">
         <div class="calculator dark">
+        	<div class= mode>Mode</div>
             <div class="theme-toggler active">
                 <i class="toggler-icon"></i>
             </div>
@@ -42,9 +56,10 @@
                 <table>
                     <tr>
                         <td><button class="btn-operator" id="clear">C</button></td>
+                        <td><button class="btn-operator" id="backspace"><</button></td>
                         <td><button class="btn-operator" id="/">&divide;</button></td>
                         <td><button class="btn-operator" id="*">&times;</button></td>
-                        <td><button class="btn-operator" id="backspace"><</button></td>
+                        
                     </tr>
                     <tr>
                         <td><button class="btn-number" id="7">7</button></td>

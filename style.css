@@ -88,8 +88,8 @@ button {
     height: 50px;
     width: 50px;
     border:0;
-    border-radius: 25px;
-    margin: 3px;
+    border-radius: 20px;
+    margin: 4px;
     font-size: 20px;
     cursor: pointer;
     transition: all 100ms ease;
@@ -107,6 +107,7 @@ button#equal {
 
 .calculator {
     background-color: #fff;
+    border: solid #8FBC8F 3px;
 }
 
 .calculator #display {
@@ -114,22 +115,27 @@ button#equal {
 }
 
 .calculator button#clear {
-    background-color: #ffd5d8;
+    background-color: #FFB6C1;
+    color: #fc4552;
+}
+
+.calculator button#backspace {
+    background-color: #FFB6C1;
     color: #fc4552;
 }
 
 .calculator button.btn-number {
     background-color: #c3eaff;
-    color: #000000;
+    color: #4682B4;
 }
 
 .calculator button.btn-operator {
-    background-color: #ffd0fb;
-    color: #f967f3;
+    background-color: #D8BFD8;
+    color: #663399;
   }
   
   .calculator button.btn-equal {
-    background-color: #adf9e7;
+    background-color: #8FBC8F;
     color: #000;
   }
 
@@ -137,6 +143,7 @@ button#equal {
 
   .calculator.dark {
     background-color: #2F4F4F;
+    border: solid white 3px;
   }
 
   .calculator.dark #display {
@@ -144,6 +151,11 @@ button#equal {
   }
 
   .calculator.dark button#clear {
+    background-color: #CD5C5C;
+    color: #ffffff;
+  }
+
+   .calculator.dark button#backspace {
     background-color: #CD5C5C;
     color: #ffffff;
   }
